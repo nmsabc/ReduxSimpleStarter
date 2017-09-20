@@ -7,7 +7,7 @@ import React, { Component } from 'react'
 class SearchBar extends Component {
   constructor (props) {
     super(props)
-    this.state = {term: 'hi there seba'}
+    this.state = {term: 'searching for a video?'}
   }
   render () {
     return (
