@@ -1,3 +1,4 @@
+import _ from 'lodash'
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import SearchBar from './components/search_bar'
@@ -14,19 +15,23 @@ class App extends Component { // ES6
       videos: [],
       selectedVideo: null
     }
+    this.videoSearch('react redux')
+  }// constructor
 
-    YTSearch({key: API_KEY, term: 'react redux meteor'}, (videos) => {
+  videoSearch (term) {
+    YTSearch({key: API_KEY, term: term}, (videos) => {
       this.setState({
         videos: videos,
         selectedVideo: videos[0]
       })
     }) // YTSearch
-  }// constructor
+  }// videoSearch
 
   render () {
+    const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 300)
     return (
       <div>
-        <SearchBar />
+        <SearchBar onSearchTermChange={videoSearch} />
         <VideoDetail video={this.state.selectedVideo} />
         <VideoList
           onVideoSelect={selectedVideo => this.setState({ selectedVideo })}
