@@ -1,3 +1,14 @@
+#Notes from course:
+
+### React
+
+we had 2 days of 200 min video & 12 h work.
+we have:
+- Rule 1-10 in the fist day
+- Rule 1-19 in the second day
+- 5 major concepts to master in total
+
+
 # ReduxSimpleStarter
 
 Interested in learning [Redux](https://www.udemy.com/react-redux/)?
