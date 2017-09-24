@@ -1,3 +1,6 @@
+# StatusAfterUbuntuInstall
+we are on SUN 24th Sept 2017 after ubuntu install
+
 # ReduxSimpleStarter
 
 Interested in learning [Redux](https://www.udemy.com/react-redux/)?
