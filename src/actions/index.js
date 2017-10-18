@@ -19,6 +19,8 @@ export function fetchWeather (cityName, country) {
   const web_request1 = axios.get(url1)
   const web_request2 = axios.get(url2)
 
+  console.log('web_Request is: ', web_request1)
+
   return {
     type: 'FETCH_WEATHER',
     payload: { web_request1, web_request2 }
