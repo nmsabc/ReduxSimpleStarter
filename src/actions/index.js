@@ -13,16 +13,17 @@ const UNITS = '&units=metric'
 export const FETCH_WEATHER = 'FETCH_WEATHER'
 
 export function fetchWeather (cityName, country) {
-  const url1 = `${ROOT_URL_AND_API}&q=?${cityName},${country}${UNITS}`
-  const url2 = `${ROOT_URL}${API_KEY}${BINDER}${cityName},${country}${UNITS}`
+  // const url1 = `${ROOT_URL_AND_API}&q=?${cityName},${country}${UNITS}`
+  const url = `${ROOT_URL}${API_KEY}${BINDER}${cityName},${country}${UNITS}`
 
-  const web_request1 = axios.get(url1)
-  const web_request2 = axios.get(url2)
+  // const web_request1 = axios.get(url1)
+  const web_request = axios.get(url)
 
-  console.log('web_Request is: ', web_request1)
+  // used to show the middleware promise
+  // console.log('web_Request is: ', web_request1)
 
   return {
     type: 'FETCH_WEATHER',
-    payload: { web_request1, web_request2 }
+    payload: { web_request }
   }
 }
