@@ -12,15 +12,15 @@ export class SearchBar extends Component {
   } // constructor
 
   onInputChange (event) {
-    console.log('printed: ', event.target.value)
+    // console.log('printed: ', event.target.value)
     this.setState({term: event.target.value})
   } // onInputChange
 
   onFormSubmit (event) {
     event.preventDefault()
 
-    // we fetch adta for a given city:
-    this.props.fetchWeather(this.state.term, 'ro')
+    // we fetch data for a given city:
+    this.props.fetchWeather(this.state.term, 'RO')
     this.setState({ term: '' }) // set term to empty string
   } // onFormSubmit
 
