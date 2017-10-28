@@ -2,15 +2,12 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 class WeatherList extends Component {
-  constructor (props) {
-    super(props)
-    this.renderWeather = this.renderWeather.bind(this)
-  }
   renderWeather (cityData) {
     const name = cityData.city.name
+    // console.log('this is our CONST name: ', name)
     return (
       <tr key={name}>
-        <td>{ name }</td>
+        <td>{name}</td>
       </tr>
     )
   }
