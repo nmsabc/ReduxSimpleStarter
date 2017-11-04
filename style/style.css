@@ -1,7 +1,6 @@
 td,th{
-  vertical-align: middle !important
-  text-align: center, !important
-
+  vertical-align: middle, !important
+  horizontal-align: center, !important
 }
 
 .input-group{
@@ -9,7 +8,7 @@ td,th{
 }
 
 svg{
-  height: 150px
+  height:180px
 }
 
 td:firs-of-type, td:firs-of-type > div{
@@ -20,4 +19,13 @@ td:firs-of-type, td:firs-of-type > div{
 #map {
  height: 200px;
  width: 200px;
+}
+
+.date_afisate{
+  margin-left: 100px;
+  font-style: oblique;
+  font-family: fantasy;
+  font-size: 12;
+  vertical-align: middle;
+  align-items: center;
 }
