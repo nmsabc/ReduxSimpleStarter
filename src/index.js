@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -14,3 +15,6 @@ ReactDOM.render(
     <App />
   </Provider>
   , document.querySelector('.container'))
+=======
+ import React from 'react'
+>>>>>>> 7ec662d1c174f9bcb39234cbffe95b72c4a13a9d
