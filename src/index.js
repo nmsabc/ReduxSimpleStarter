@@ -6,6 +6,7 @@ import { BrowserRouter, Route } from 'react-router-dom'
 
 import reducers from './reducers'
 import PostIndex from './components/post_index'
+import CrawlerIndex from './components/crawler_start'
 
 const createStoreWithMiddleware = applyMiddleware()(createStore)
 
@@ -14,6 +15,7 @@ ReactDOM.render(
     <BrowserRouter>
       <div>
         <Route path='/' component={PostIndex} />
+        <Route path='/crawler' component={CrawlerIndex} />
       </div>
     </BrowserRouter>
   </Provider>
