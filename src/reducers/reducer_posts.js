@@ -12,8 +12,7 @@ export default function (state = {}, action) {
       return { ...state, [post.id]: post }
 
     case DELETE_POST:
-    return _.omit(state,action.payload)
-    
+      return _.omit(state, action.payload)
 
     default:
       // console.log('I have been here in default')
